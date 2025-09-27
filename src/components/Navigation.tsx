@@ -43,7 +43,6 @@ const Navigation = () => {
     { name: "Features", href: "#features", onClick: () => scrollToSection('features') },
     { name: "Prices", href: "#pricing", onClick: () => scrollToSection('pricing') },
     { name: "Testimonials", href: "#testimonials", onClick: () => scrollToSection('testimonials') },
-    { name: "Contact", href: "/contact", onClick: null },
   ];
 
   return (
@@ -79,11 +78,11 @@ const Navigation = () => {
               </a>
             ))}
             <Button 
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => scrollToSection('contact')}
               size="sm"
               className="button-gradient"
             >
-              Start a Project
+              Start Your Project
             </Button>
           </div>
 
@@ -116,11 +115,11 @@ const Navigation = () => {
                   <Button 
                     onClick={() => {
                       setIsMobileMenuOpen(false);
-                      window.location.href = '/contact';
+                      scrollToSection('contact');
                     }}
                     className="button-gradient mt-4"
                   >
-                    Start a Project
+                    Start Your Project
                   </Button>
                 </div>
               </SheetContent>

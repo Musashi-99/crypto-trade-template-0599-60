@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 
 const ContactSection = () => {
   return (
-    <section className="container px-4 py-24 bg-black">
+    <section id="contact" className="container px-4 py-24 bg-black">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -17,8 +17,8 @@ const ContactSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
-            Get in{" "}
-            <span className="text-gradient font-medium">Touch</span>
+            Start Your{" "}
+            <span className="text-gradient font-medium">Project</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
             Ready to start your project? Let's discuss your vision and bring it to life.
