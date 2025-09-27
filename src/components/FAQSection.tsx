@@ -56,7 +56,7 @@ const FAQSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-normal mb-6 tracking-tight">
-            ❓ Frequently Asked{" "}
+            Frequently Asked{" "}
             <span className="text-gradient font-medium">Questions</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-400">

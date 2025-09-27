@@ -46,7 +46,7 @@ const WhyChooseSection = () => {
           transition={{ duration: 0.5 }}
           className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left"
         >
-          🚀 Why Choose{" "}
+          Why Choose{" "}
           <span className="text-gradient font-medium">Orbito?</span>
         </motion.h2>
         <motion.p

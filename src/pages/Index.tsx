@@ -13,6 +13,7 @@ import TeamSection from "@/components/TeamSection";
 import FAQSection from "@/components/FAQSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import BenefitsSection from "@/components/BenefitsSection";
+import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
   return (
@@ -138,6 +139,10 @@ const Index = () => {
         <FAQSection />
       </div>
 
+      {/* Contact Section */}
+      <div className="bg-black">
+        <ContactSection />
+      </div>
 
       {/* Footer */}
       <div className="bg-black">

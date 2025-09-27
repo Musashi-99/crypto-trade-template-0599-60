@@ -46,7 +46,7 @@ const TeamSection = () => {
           transition={{ duration: 0.5 }}
           className="text-5xl md:text-6xl font-normal mb-6 tracking-tight text-left"
         >
-          👥 Meet the{" "}
+          Meet the{" "}
           <span className="text-gradient font-medium">Team</span>
         </motion.h2>
         <motion.p
