@@ -13,10 +13,11 @@ export const FeatureTab = ({ icon, title, description, isActive }: FeatureTabPro
     <div 
       className={`
         w-full flex items-center gap-4 p-5 rounded-xl
-        transition-all duration-300 relative
+        transition-all duration-300 relative green-glow-hover
+        border border-transparent
         ${isActive 
-          ? 'glass shadow-lg shadow-primary/10' 
-          : 'hover:glass-hover'
+          ? 'glass shadow-lg shadow-primary/20 border-primary/30' 
+          : 'hover:glass-hover hover:border-primary/20'
         }
       `}
     >

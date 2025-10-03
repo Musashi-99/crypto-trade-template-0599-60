@@ -72,3 +72,13 @@
 .button-gradient {
   @apply bg-gradient-to-r from-primary to-[#22c55e] hover:opacity-90 transition-opacity rounded-full;
 }
+
+.green-glow-hover {
+  @apply transition-all duration-300;
+  position: relative;
+}
+
+.green-glow-hover:hover {
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.4), 0 0 40px rgba(52, 211, 153, 0.2);
+  border-color: hsl(var(--primary) / 0.5);
+}
