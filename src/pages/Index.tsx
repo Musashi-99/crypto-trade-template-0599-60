@@ -71,8 +71,8 @@ const Index = () => {
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 items-start"
           >
-            <Button size="lg" className="button-gradient" onClick={() => window.location.href = '/contact'}>
-              Start a Project
+            <Button size="lg" className="button-gradient" onClick={() => window.location.href = '/booking'}>
+              Book a Meeting
             </Button>
             <Button size="lg" variant="link" className="text-white">
               Explore Our Work <ArrowRight className="ml-2 w-4 h-4" />
