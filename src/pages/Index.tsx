@@ -14,6 +14,7 @@ import FAQSection from "@/components/FAQSection";
 import WhyChooseSection from "@/components/WhyChooseSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import ContactSection from "@/components/ContactSection";
+import { CommitsGrid } from "@/components/ui/commits-grid";
 
 const Index = () => {
   return (
@@ -86,15 +87,9 @@ const Index = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="relative mx-auto max-w-5xl mt-20"
+          className="flex justify-center mx-auto max-w-5xl mt-20"
         >
-          <div className="glass rounded-xl overflow-hidden">
-            <img
-              src="/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
-              alt="Orbito Development Dashboard"
-              className="w-full h-auto"
-            />
-          </div>
+          <CommitsGrid text="ORBITO" />
         </motion.div>
       </motion.section>
 
