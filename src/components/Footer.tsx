@@ -26,12 +26,12 @@ const Footer = () => {
               <h4 className="font-medium">Services</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#features" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Our Services
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Pricing
                   </a>
                 </li>
@@ -42,12 +42,12 @@ const Footer = () => {
               <h4 className="font-medium">Company</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Contact
                   </a>
                 </li>
@@ -58,12 +58,12 @@ const Footer = () => {
               <h4 className="font-medium">Legal</h4>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  <a href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                     Terms of Service
                   </a>
                 </li>
