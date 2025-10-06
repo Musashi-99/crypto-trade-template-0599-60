@@ -11,16 +11,14 @@ export const CommitsGrid = ({ text }: { text: string }) => {
     setAnimationKey(prev => prev + 1);
   };
   const cleanString = (str: string): string => {
-    const upperStr = str.toUpperCase();
-
-    const withoutAccents = upperStr
+    const withoutAccents = str
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
 
     const allowedChars = Object.keys(letterPatterns);
     return withoutAccents
       .split("")
-      .filter((char) => allowedChars.includes(char))
+      .filter((char) => allowedChars.includes(char.toUpperCase()))
       .join("");
   };
 
@@ -33,11 +31,11 @@ export const CommitsGrid = ({ text }: { text: string }) => {
     const highlightedCells: number[] = [];
 
     cleanedText
-      .toUpperCase()
       .split("")
       .forEach((char) => {
-        if (letterPatterns[char]) {
-          const pattern = letterPatterns[char].map((pos) => {
+        const upperChar = char.toUpperCase();
+        if (letterPatterns[upperChar]) {
+          const pattern = letterPatterns[upperChar].map((pos) => {
             const row = Math.floor(pos / 50);
             const col = pos % 50;
             return (row + 1) * width + col + currentPosition;
