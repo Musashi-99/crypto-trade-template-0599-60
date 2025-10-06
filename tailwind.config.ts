@@ -74,8 +74,8 @@ export default {
       },
       animation: {
         marquee: 'marquee 40s linear infinite',
-        highlight: "highlight 0.6s ease forwards",
-        flash: "flash 0.6s ease forwards",
+        highlight: "highlight 0.6s ease forwards infinite",
+        flash: "flash 0.6s ease forwards infinite",
       }
     },
   },
