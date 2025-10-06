@@ -89,7 +89,7 @@ const Index = () => {
           transition={{ delay: 0.6 }}
           className="flex justify-center mx-auto max-w-5xl mt-20"
         >
-          <CommitsGrid text="orbito" />
+          <CommitsGrid text="ORBITO" />
         </motion.div>
       </motion.section>
 
