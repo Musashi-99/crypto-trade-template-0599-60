@@ -64,18 +64,20 @@ export default {
         },
         highlight: {
           "0%": { backgroundColor: "transparent" },
+          "3%": { backgroundColor: "var(--highlight)" },
           "100%": { backgroundColor: "var(--highlight)" },
         },
         flash: {
           "0%": { backgroundColor: "hsl(var(--card))" },
-          "50%": { backgroundColor: "var(--highlight)" },
+          "1.5%": { backgroundColor: "var(--highlight)" },
+          "3%": { backgroundColor: "hsl(var(--card))" },
           "100%": { backgroundColor: "hsl(var(--card))" },
         },
       },
       animation: {
         marquee: 'marquee 40s linear infinite',
-        highlight: "highlight 0.6s ease forwards infinite",
-        flash: "flash 0.6s ease forwards infinite",
+        highlight: "highlight 20.6s ease infinite",
+        flash: "flash 20.6s ease infinite",
       }
     },
   },
