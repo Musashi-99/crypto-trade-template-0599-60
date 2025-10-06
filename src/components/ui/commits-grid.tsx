@@ -5,6 +5,11 @@ import { cn } from "@/lib/utils";
 import type { CSSProperties } from "react";
 
 export const CommitsGrid = ({ text }: { text: string }) => {
+  const [animationKey, setAnimationKey] = React.useState(0);
+
+  const handleInteraction = () => {
+    setAnimationKey(prev => prev + 1);
+  };
   const cleanString = (str: string): string => {
     const upperStr = str.toUpperCase();
 
@@ -70,7 +75,10 @@ export const CommitsGrid = ({ text }: { text: string }) => {
 
   return (
     <section
-      className="w-full max-w-7xl bg-card border grid p-4 sm:p-8 gap-1.5 sm:gap-3 rounded-[10px] sm:rounded-[15px]"
+      key={animationKey}
+      onMouseEnter={handleInteraction}
+      onClick={handleInteraction}
+      className="w-full max-w-7xl bg-card border grid p-4 sm:p-8 gap-1.5 sm:gap-3 rounded-[10px] sm:rounded-[15px] cursor-pointer transition-transform hover:scale-[1.01]"
       style={{
         gridTemplateColumns: `repeat(${gridWidth}, minmax(0, 1fr))`,
         gridTemplateRows: `repeat(${gridHeight}, minmax(0, 1fr))`,
